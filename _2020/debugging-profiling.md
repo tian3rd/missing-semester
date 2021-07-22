@@ -251,7 +251,7 @@ However, wall clock time can be misleading since your computer might be running 
 For example, try running a command that performs an HTTP request and prefixing it with [`time`](https://www.man7.org/linux/man-pages/man1/time.1.html). Under a slow connection you might get an output like the one below. Here it took over 2 seconds for the request to complete but the process only took 15ms of CPU user time and 12ms of kernel CPU time.
 
 ```bash
-$ time curl https://missing.csail.mit.edu &> /dev/null`
+$ time curl https://missing.csail.mit.edu &> /dev/null
 real    0m2.561s
 user    0m0.015s
 sys     0m0.012s
@@ -465,7 +465,7 @@ Summary
 ```
 
 As it was the case for debugging, browsers also come with a fantastic set of tools for profiling webpage loading, letting you figure out where time is being spent (loading, rendering, scripting, &c).
-More info for [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Profiling_with_the_Built-in_Profiler) and [Chrome](https://developers.google.com/web/tools/chrome-devtools/rendering-tools).
+More info for [Firefox](https://profiler.firefox.com/docs/) and [Chrome](https://developers.google.com/web/tools/chrome-devtools/rendering-tools).
 
 # Exercises
 
